@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid'  // <- Grid v2
 import './App.css'
 import HeaderUI from './components/HeaderUI'
 import AlertUI from './components/AlertUI'
+import SelectorUI from './components/SelectorUI'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -16,16 +17,24 @@ function App() {
 
       <Grid container spacing={5} justifyContent="center" alignItems="center">
 
-        {/* Encabezado */}
-         <Grid size={{ xs: 12, md: 10 }} sx={{ display: { xs: 'none', md: 'block' } }} >
-             <HeaderUI/>
-         </Grid>
-
-        {/* Alertas */}
+          {/* Alertas */}
          <Grid container spacing={10} justifyContent="center" alignItems="center">
 
              <AlertUI description="No se preveen lluvias"/>
 
+         </Grid>
+
+
+         {/* selector */}
+         <Grid size={{ xs: 12, md: 10 }} sx={{ display: { xs: 'none', md: 'block' } }} >
+             <SelectorUI/>
+         </Grid>
+
+
+
+        {/* Encabezado */}
+         <Grid size={{ xs: 12, md: 10 }} sx={{ display: { xs: 'none', md: 'block' } }} >
+             <HeaderUI/>
          </Grid>
 
 
