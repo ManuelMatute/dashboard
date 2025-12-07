@@ -16,6 +16,7 @@ export interface HourlyUnits {
   relative_humidity_2m: string
   apparent_temperature: string
   wind_speed_10m: string
+  precipitation: string
 }
 
 export interface Hourly {
@@ -24,4 +25,5 @@ export interface Hourly {
   relative_humidity_2m: number[]
   apparent_temperature: number[]
   wind_speed_10m: number[]
+  precipitation: number[]
 }

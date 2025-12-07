@@ -9,12 +9,12 @@ interface IndicatorUIProps {
 
 export default function IndicatorUI(props: IndicatorUIProps) {
   return (
-    <Card>
-      <CardContent sx={{ height: '100%' }}>
-        <Typography variant="h5" component="div">
+    <Card className="indicator-card" elevation={2}>
+      <CardContent className="indicator-content">
+        <Typography variant="h4" className="indicator-value">
           {props.description}
         </Typography>
-        <Typography variant="body2" component="p" color="text.secondary">
+        <Typography variant="body2" className="indicator-title">
           {props.title}
         </Typography>
       </CardContent>
